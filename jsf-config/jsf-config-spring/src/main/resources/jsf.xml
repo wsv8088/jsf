@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jsf="http://www.jd.com/schema/jsf"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://www.jd.com/schema/jsf http://www.jd.com/schema/jsf/jsf.xsd">
+
+
+    <jsf:service id="myservice" interface="xxxxx" ref="demoService">
+        <jsf:parameter key="a" value="b"></jsf:parameter>
+    </jsf:service>
+
+    <bean id="demoService" class="com.wsun.jsf.config.spring.service.impl.DemoServiceImpl"></bean>
+
+</beans>
